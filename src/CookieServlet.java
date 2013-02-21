@@ -37,6 +37,7 @@ public class CookieServlet extends HttpServlet {
 
 	      if(parameter != null) {
 	    	  session.setAttribute("userName", parameter);
+	    	  session.setMaxInactiveInterval(3600);
 	          response.getWriter().write(
 	            "<br/>Thank you " + parameter + "! I will remember your name forever ;)");
 	      } else if (userName != null) {
