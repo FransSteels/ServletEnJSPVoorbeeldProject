@@ -6,6 +6,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.eclipse.jdt.internal.compiler.batch.Main;
+
 
 public class EersteServlet extends HttpServlet {
 	
@@ -16,7 +18,10 @@ public class EersteServlet extends HttpServlet {
 		 PrintWriter out = response.getWriter();
 		 java.util.Date today = new java.util.Date();
 		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "<h2>Bekijk de DD van dit project ! (kevin)<h2>" + "</body>" + "</html>");
-
+		
+	}
+	public static void main(String[] args) {
+		System.out.println("lennert is de beste");
 	}
 
 }
