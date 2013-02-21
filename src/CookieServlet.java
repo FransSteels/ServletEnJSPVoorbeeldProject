@@ -20,9 +20,10 @@ public class CookieServlet extends HttpServlet {
             throws ServletException, IOException {
       
       java.util.Date today = new java.util.Date();
-      response.getWriter().write("<html> " + "<body>" + "<h1>Test Servlet</h1>" + "<br>" + today + "</body>" + "</html>");
-
+      response.getWriter().write("<html> " + "<body>" + "<h1>Cookie Servlet</h1>");
       doGet(request, response);
+      response.getWriter().write("<br><small>" + today + "<br/>&copy; 2013 Tom Causs</small></body>" + "</html>");
+
       
     }
 
@@ -42,7 +43,7 @@ public class CookieServlet extends HttpServlet {
 	            "<br/>Thank you " + parameter + "! I will remember your name forever ;)");
 	      } else if (userName != null) {
 	    	  response.getWriter().write(
-	  	            "<br/>Welcome " + userName + "! I know your name, because it is stored in your cookies.");
+	  	            "<br/>Welcome " + userName + "! I know your name, because it is stored in your cookies.<br/>");
 	      } else {
 	    	  response.getWriter().write(
 		  	            "<br/>Welcome user! I don't know your name yet, but you can enter it below, and I will remember it forever.");
