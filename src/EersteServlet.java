@@ -15,7 +15,7 @@ public class EersteServlet extends HttpServlet {
 		
 		 PrintWriter out = response.getWriter();
 		 java.util.Date today = new java.util.Date();
-		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "<h2>Bekijk de DD van Kevin... :-) ! (kevin) Wouter is de beste<h2>" + "</body>" + "</html>");
+		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "<h2>kwaliteitsvol rundsvlees tegen betaalbare prijzen<h2>" + "</body>" + "</html>");
 		
 	}
 	public static void main(String[] args) {
