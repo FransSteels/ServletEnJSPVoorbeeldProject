@@ -16,8 +16,9 @@ public class EersteServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		 PrintWriter out = response.getWriter();
-		 java.util.Date today = new java.util.Date();
-		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "<h2>tegen betaalbare prijzen<h2>" + "</body>" + "</html>");
+		 
+		 String param1 = request.getParameter("param1");
+		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + param1 + "<h2><h2>" + "</body>" + "</html>");
 		
 	}
 	public static void main(String[] args) {
