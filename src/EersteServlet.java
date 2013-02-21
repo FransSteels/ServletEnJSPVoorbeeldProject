@@ -1,5 +1,3 @@
-
-
 import java.io.IOException;
 import java.io.PrintWriter;
 
@@ -17,7 +15,7 @@ public class EersteServlet extends HttpServlet {
 		
 		 PrintWriter out = response.getWriter();
 		 java.util.Date today = new java.util.Date();
-		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "</body>" + "</html>");
+		 out.println("<html> " + "<body>" + "<h1>Een Eerste Servlet</h1>" + "<br>" + today + "<h2>Bekijk de DD van dit project ! (kevin)<h2>" + "</body>" + "</html>");
 
 	}
 
