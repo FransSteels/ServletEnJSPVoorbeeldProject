@@ -6,7 +6,9 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-
+/**
+ * Any fool can write code that a computer can understand. Good programmers write code that humans can understand.
+ */
 public class EersteServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 1L;
