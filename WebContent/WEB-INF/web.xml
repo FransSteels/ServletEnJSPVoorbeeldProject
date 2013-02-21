@@ -4,18 +4,31 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
 	id="WebApp_ID" version="3.0">
 	<display-name>EersteDynamicWebPage</display-name>
+	
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	
+	
 	<servlet>
 		<servlet-name>EersteServlet</servlet-name>
-		<servlet-class>EersteServlet</servlet-class>	
+		<servlet-class>EersteServlet</servlet-class>
 	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>EersteServlet</servlet-name>
 		<url-pattern>/EersteServlet</url-pattern>
 	</servlet-mapping>
-	
+
+	<servlet>
+		<servlet-name>TweedeServlet</servlet-name>
+		<servlet-class>TweedeServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>TweedeServlet</servlet-name>
+		<url-pattern>/TweedeServlet</url-pattern>
+	</servlet-mapping>
+
 </web-app>
